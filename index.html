@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Total Bill Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title"><h1>Total Bill Calculator</h1></div>
+        <div class="container" id="topcontainer">
+            <div class="title">Bill Total</div>
+            <div class="inputcontainer">
+                <span>$</span>
+                <input type="text" id="billTotal" placeholder="0.00" onkeyup="calculateBill()"> 
+            </div>
+        </div>
+         
+        
+        <div class="container" id="centercontainer">
+            <div class="title">Tip</div>
+            <div class="inputcontainer">
+                <span>%</span>
+                <input type="text" id="tipInput" placeholder="10" onkeyup="calculateBill()">
+            </div>
+        </div>
+
+        <div class="container" id="bottomcontainer">
+            <div class="splitContainer">
+                <div class="title">People</div>
+                <div class="controls">
+
+                    <span class="btn-container">
+                        <button class="btn" onclick="increasePeople()">
+                            <span class="btn-txt">+</span>
+                        </button>
+                    </span>
+
+                    <span class="btn-Amount" id="no-of-people">
+                       1
+                    </span>
+
+                    <span  class="btn-container">
+                        <button class="btn" onclick="decreasePeople()">
+                            <span class="btn-txt">-</span>
+                        </button>
+                    </span>
+
+
+                </div>
+            </div>
+
+
+            <div class="totalContainer">
+                <div class="title">Total Per Person</div>
+                <div class="total" id="perPersonTotal">$0.00</div>
+            </div>
+        </div>
+
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

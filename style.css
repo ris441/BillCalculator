@@ -1,0 +1,93 @@
+*{
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-color: rgb(146, 106, 233);
+}
+.wrapper{
+    height: 525px;
+    width: 360px;
+    color: white;
+    background-color: rgb(28, 39, 90);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin: 100px auto;
+    box-shadow: 2rem 2rem 1rem rgb(54, 46, 108);
+}
+.container{
+    margin-top: 1.5rem;
+}
+.title{
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+}
+#topcontainer{
+    margin-top: 4rem;
+}
+.control{
+    display: flex;
+    /* flex-direction:row; */
+    align-items: center;
+}
+
+.inputcontainer{
+    background: rgb(90, 97, 130);
+    border-radius: 1.4rem;
+    padding: 0rem 0.8rem;
+    display: flex;
+    align-items: center;
+}
+#billTotal,
+#tipInput{
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    padding: none;
+    background-color: rgb(90, 97, 130);
+}
+
+.btn-container{
+    background-color: rgb(146, 106, 233);
+    display: grid;
+    /* grid-auto-flow: row; */
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    place-items: center;
+}
+.btn{
+    border-radius: 50%;
+    background-color: rgb(146, 106, 233);
+    border: none;
+}
+.btn-txt{
+    font-size: 0.8rem;
+    font-weight: bold;
+    display:grid;
+    place-items: center;
+}
+.btn-txt{
+    color: rgb(50, 50, 84)!important;
+}
+.btn-Amount {
+    /* display: inline; */
+    font-size: 1.6rem;
+    margin: 0.8rem;
+  }
+  
+  #bottomcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .totalContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  
+  .total {
+    font-size: 2rem;
+  }
+  
